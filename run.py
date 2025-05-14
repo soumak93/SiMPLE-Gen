@@ -3,11 +3,11 @@
 """
 Master pipeline: run all five steps in order.
 """
-from gen       import run_gen
-from spec      import run_spec
-from abundance import run_abundance
-from assign    import run_assign
-from damping   import run_damping
+from SiMPLE-Gen.gen       import run_gen
+from SiMPLE-Gen.spec      import run_spec
+from SiMPLE-Gen.abundance import run_abundance
+from SiMPLE-Gen.assign    import run_assign
+from SiMPLE-Gen.damping   import run_damping
 
 def main():
     print("→ Running gen.py …")
