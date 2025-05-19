@@ -3,26 +3,6 @@ Simulated Mock Population of Lyman-Alpha Emitters Generator
 
 A modular, end-to-end pipeline to generate simulated Lyman-α emitters from cosmological simulation outputs.
 
----
-
-## 📦 Repository Structure
-
-```
-SiMPLE-Gen/              # root folder (repo name)
-├── run.py               # master pipeline script
-├── requirements.txt     # Python dependencies
-├── README.md            # this file
-├── .gitignore
-└── SiMPLE-Gen/          # Python package
-    ├── config.py        # all RAW & PATHS definitions
-    ├── gen.py           # Step 1: sightline generation
-    ├── spec.py          # Step 2: τ(z) calculation
-    ├── abundance.py     # Step 3: abundance matching
-    ├── assign.py        # Step 4: LLya & REW sampling
-    └── damping.py       # Step 5: damping transmission
-```
-
-Simulation inputs live outside this repo under `data/raw/`, and outputs are written to `data/processed/` by default.
 
 ---
 
@@ -50,6 +30,28 @@ Simulation inputs live outside this repo under `data/raw/`, and outputs are writ
      ```
    * Place simulation files (density, temperature, ionization, velocity, halo positions & masses) in `data/raw/`.
    * Edit `SiMPLE-Gen/config.py ▶︎ INPUT_DIR` to point at that folder.
+  
+---
+
+## 📦 Repository Structure
+
+```
+SiMPLE-Gen/              # root folder (repo name)
+├── run.py               # master pipeline script
+├── requirements.txt     # Python dependencies
+├── README.md            # this file
+├── .gitignore
+└── SiMPLE-Gen/          # Python package
+    ├── config.py        # all RAW & PATHS definitions
+    ├── gen.py           # Step 1: sightline generation
+    ├── spec.py          # Step 2: τ(z) calculation
+    ├── abundance.py     # Step 3: abundance matching
+    ├── assign.py        # Step 4: LLya & REW sampling
+    └── damping.py       # Step 5: damping transmission
+```
+
+Simulation inputs live outside this repo under `data/raw/`, and outputs are written to `data/processed/` by default.
+
 
 ---
 
