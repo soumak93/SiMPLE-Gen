@@ -3,6 +3,9 @@ Simulated Mock Population of Lyman-Alpha Emitters Generator
 
 A modular, end-to-end pipeline to generate simulated Lyman-α emitters from cosmological simulation outputs.
 
+> **Note:** This pipeline builds upon the methodology outlined in [Weinberger et al. (2019)](https://ui.adsabs.harvard.edu/abs/2019MNRAS.485.1350W/abstract), which models intrinsic and transmitted Lyman-α emission based on halo properties and radiative transfer approximations.
+
+
 
 ---
 
